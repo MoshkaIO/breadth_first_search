@@ -18,7 +18,7 @@ public class LineOfMetro {
     LineOfMetro(String newName, int newId, ArrayList<Integer> stations){ //конструктор по списку id станций
         Name=newName;
         Id=newId;
-        for (int i=0; i<stations.size(); i++){ //устанавлием список станций по id
+        for (int i=0; i<stations.size(); i++){
             int st = stations.get(i);
             StationsList.add(MetroModel.getCity().getAllStations().get(st));
         }
